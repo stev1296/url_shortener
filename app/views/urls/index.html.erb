@@ -1,7 +1,7 @@
 <h1>Index Url</h1>
 <% @urls.each do |url| %>
  <p>
- <%= link_to url.id, url_path(:id => url.random_id) %> => <%= link_to url.original, url_path(:id => url.random_id) %> <br>
+ <%= link_to url.id, url_path(:id => url.random_id) %> => <%= url.original %> <br>
  <%= link_to "Delete", url, :confirm => "Are You Sure?", :method => :delete %>
  </p>
 <% end %>
